@@ -6,8 +6,15 @@ Official repository for KPDM: Key Phrase Dynamic Masking for Robust Text-to-Imag
 
 ### Requirements
 
-```bash
-pip install torch torchvision ftfy regex prettytable easydict pyyaml pillow
+```
+torch>=2.0.0
+torchvision>=0.15.0
+Pillow
+ftfy
+regex
+prettytable
+easydict
+PyYAML
 ```
 
 ### Data Preparation
@@ -26,7 +33,7 @@ The BPE vocabulary can be downloaded from [OpenAI CLIP](https://github.com/opena
 
 ### Checkpoints
 
-Pretrained checkpoints are available at [huggingface.co/you93887/KPDM](https://huggingface.co/you93887/KPDM).
+Pretrained checkpoints and configs are available at [huggingface.co/you93887/KPDM](https://huggingface.co/you93887/KPDM).
 
 | Dataset    | Checkpoint            |
 | ---------- | --------------------- |
@@ -42,22 +49,6 @@ python test.py \
     --checkpoint path/to/kpdm_rstpreid.pth
 ```
 
-The config file follows this format:
-
-```yaml
-dataset_name: RSTPReid
-root_dir: ./data
-img_size: [384, 128]
-text_length: 77
-test_batch_size: 512
-num_workers: 8
-pretrain_choice: ViT-B/16
-stride_size: 16
-select_ratio: 0.5
-temperature: 0.02
-loss_names: ''
-training: false
-```
 
 ## Citation
 

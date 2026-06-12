@@ -1,6 +1,5 @@
 # KPDM
 
-Official repository for KPDM: Key Phrase Dynamic Masking for Robust Text-to-Image Person Retrieval (AAAI 2026).
 
 ## Inference
 
